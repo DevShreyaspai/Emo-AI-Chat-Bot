@@ -1,0 +1,458 @@
+html,body{
+    margin:0;
+    padding: 0;
+    height:100vh;
+    cursor: pointer;
+}
+body{
+    background-color: white;
+    margin:0;
+    padding: 0;
+    height:100%;
+}
+
+
+.headerb::before {
+    background: linear-gradient(to right, #b3ff00, #207df8);
+    content: "";
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.header::before{
+    background: black;
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index:-1;
+    opacity: 0.4;
+}
+.header{
+    box-shadow: none;
+}
+header{
+    display:flex;
+    background-color: white;
+    width:100%;
+    box-shadow: 0 5px 0 rgba(255, 255, 255, 0.42);
+    color:black;
+}
+.navigation{
+    display: flex;
+    list-style-type: none;
+    width:100%;
+    height:50px;
+}
+.navigation li{
+    padding:20px;
+    font-size:20pt;
+    font-family: "Roboto", sans-serif;
+    padding-left:10px;
+    
+}
+.signup,.login{
+    outline: none;
+    width:120px;
+    font-size: 17pt;;
+    height:40px;
+    position: relative;
+    bottom:5px;
+    background-color: white;
+    color:#8d0cf7;
+    border-radius:5px;
+    left:320px;
+    border:3px soild #8d0cf7;
+}
+.search{
+    border: none;
+    position: relative;
+    bottom: 6px;;
+    left:280px;
+}
+.searchbox:hover{
+    border: 2px solid rgb(104, 30, 30);
+    border-radius: 10px;
+}
+.login:hover{
+    background-color: none;
+    background-image: linear-gradient(to right,#b700ff,#ff0000);
+    color: white;
+}
+.signup:hover{
+    background-color: none;
+    background-image: linear-gradient(to right,#b700ff,#ff0000);
+    color: white;
+}
+.login-popup{
+    display:flex;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.42);
+    width:250px;
+    align-items: center;
+    height: 250px;;
+    border-radius: 10px;;
+}
+.login-popup form{
+    display:flex;
+    flex-direction: column;
+    
+}
+.input{
+    width:200px;
+    height:40px;
+    background-color: #7700ff;
+    border:none;
+    border-radius: 10px;;
+}
+.login-popup form input::placeholder{
+    font-size: 13pt;;
+    color:white;
+    text-align: left;
+    font-family: 'Roboto','sans-serif';
+    position:relative;
+    left:10px;
+}
+.submit{
+    background-color: rgb(234, 0, 255);
+    width:100px;
+    color:white;
+    height:50px;
+    border:none;
+    border-radius: 10px;
+    font-size:15pt;
+    position: relative;
+    left:45px;
+    top:5px;
+}
+#username{
+    position:relative;
+    bottom: 5px;;
+}
+.login-popup{
+    position: relative;
+    left:630px;
+    top:200px;
+    visibility: hidden;
+    z-index:3445;
+}
+.login-popup h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-popup button{
+    border: none;
+    background: none;
+    position: inherit;
+    bottom:210px;
+    left:100px;
+}
+.signup-popup{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    background-color: rgba(255, 255, 255, 0.42);
+    
+}
+.signup-popup form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:20px;
+}
+.signup-popup h1{
+    position: relative;
+    left:60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signup-popup input::placeholder{
+    font-size: 13pt;;
+    color:white;
+    text-align: left;
+    font-family: 'Roboto','sans-serif';
+    position:relative;
+    left:10px;
+}
+#ssubmit{
+    position: relative;
+    top:14px;
+}
+#firstname{
+    position: relative;
+    top:3px;
+}
+#lastname{
+    position: relative;
+    top:6px;
+}
+#susername{
+    position: relative;
+    top:9px;
+}
+#spassword{
+    position: relative;
+    top:12px;
+}
+.sclose{
+    border: none;
+    background: none;
+    width:25px;
+    position: relative;
+    bottom:290px;
+    left:200px;
+}
+.signup-popup{
+    position: relative;
+    left:630px;
+    bottom:30px;
+    border-radius: 10px;;
+    visibility: hidden;
+    z-index:3545;
+}
+.searchboxpopup{
+    width:300px;
+    height: 50px;;
+}
+.searchboxpopup input{
+    width:-80%;
+    height:90%;
+    border: none;
+    background-color: #7700ff;
+    position: relative;
+    bottom:10px;
+    left:10px;
+}
+.searchboxpopup input::placeholder{
+    font-size: 14pt;;
+    position:relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.searchboxpopup{
+    background-color: #7700ff;
+    border-radius: 20px;
+}
+
+.searchboxpopup img{
+    position: relative;
+    top:3px;
+    left:3px;
+}
+.searchboxpopup input:focus{
+    border: none;
+    outline: none;
+}
+.searchboxpopup input[type="text"]{
+    font-size: 14pt;
+}
+.searchboxpopup{
+    position: relative;
+    left:630px;
+    bottom: 400px;;
+    visibility: hidden;
+    z-index: 23;
+}
+.searchboxpopup div{
+    position: relative;
+    width:320px;
+    height:300px;
+    background-color: white;
+    bottom: 70px;;
+    right:12px;
+    background-color: rgba(255, 255, 255, 0.62);
+    z-index: -1;
+    border-radius: 20px;
+    z-index:3445;
+}
+.mode{
+    position: relative;
+    bottom: 9px;;
+    right:40px;
+    border: none;
+    background:none;
+}
+.search{
+    background: none;;
+}
+
+.headingswitch{
+    display: flex;
+    position: relative;;
+    bottom: 640px;;
+    margin:0;
+}
+.headingswitch h1{
+    align-self: center;
+    position: inherit;
+    left:100px;
+    top:100px;
+    font-size: 30pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headingswitch img{
+    position: absolute;
+    right: 0;
+    margin: 0;
+}
+
+#business-span {
+    display: inline-block;
+    border-right: 2px solid black;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% { border-color: transparent; }
+}
+.chatbotdisplay{
+    position: relative;
+    left:540px;
+    width: 500px;;
+    bottom: 340px;;
+}
+.chatbotdisplay h1{
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;;
+}
+.chatbotdisplay button{
+    position: relative;
+    left:120px;
+    font-size: 20pt;;
+    border-radius: 10px;;
+    border: none;
+    width:200px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+}
+.item a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidemenu{
+    position: relative;
+    bottom: 842px;
+    background-color: white;
+    margin:0;
+    padding: 0;
+    width:200px;
+    height:89.6%; 
+    right:200px;
+}
+.sidemenu li{
+    padding: 13px;;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+.sidemenu li img{
+    position: relative;
+    bottom: -10px;;
+    left:130px;
+    
+}
+.sidemenu li p{
+    position: relative;
+    bottom: 60px;
+}
+.chatbox{
+    background:linear-gradient(to right,lightblue,greenyellow);
+    width:1000px;
+    height:89.6%;
+    position: relative;
+    bottom: 1539px;;
+    left:300px;
+}
+
+.chatbox input{
+    border:none;
+    width:84%;
+    padding: 20px;
+    position: inherit;
+    left:4%;
+    top:6.5%;
+    font-size: 15pt;
+    z-index:1;
+    background: none;
+    
+}
+.chatbox input::placeholder{
+    color:rgb(104, 102, 102);
+    font-size: 15pt;;
+    position:relative;
+    left:5px;
+}
+.mic{
+    border:none;
+    position: inherit;
+    top:7.9%;
+    right:86.6%;
+    z-index: 900;
+    background: none;
+}
+.mic img{
+    position: inherit;
+    height:38px;
+    background: none;
+}
+.overlay{
+    border-radius: 33px;;
+    width:93%;
+    padding: 20px;
+    position: inherit;
+    left:1%;
+    top:-3%;
+    font-size: 15pt;
+    border:3px solid black;
+    height:3%;
+    z-index: 0;
+}
+
+.chatbox input:focus{
+    border: none;
+    outline: none;
+}
+
+.chatboxi{
+    width:95%;
+    height:83%;
+    position: inherit;
+    left:2.5%;
+    top:2.5%;
+    overflow-y: scroll;
+}
+.chatboxi::content{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.chatbox input::before{
+    background:linear-gradient(to right,lightblue,greenyellow);
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+.ent{
+    position: inherit;
+    background: none;
+    border:none;
+    top:55px;
+    right:10px;
+}
+.chatboxi img{
+    width: 70%;position: inherit;left:120px;top:7%;visibility: hidden;
+}

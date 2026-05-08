@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body">
+    <header class="headerb">
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item" id="item1"><img src="Images/logo.png" width="35px" height="35px" alt=""><b style="position: relative;top:-10px;left:10px;">Emo</b></li>
+                <li class="item" id="item2"><a href="index.html">Home</a></li>
+                <li class="item" id="item3"><a href="cr.html">Chat Room</a></li>
+                <li class="item" id="item4"><a href="">About</a></li>
+                <li class="item" id="item5"><a href="">Contact Us</a></li>
+                <li class="item" id="item6"><button class="search"><img class="searchbox"src="Images/searchbox.png" alt="" height="40px"></button></li>
+                <li class="item" id="item7"><button class="signup">Sign Up</button></li>
+                <li class="item" id="item8"><button class="login">Login</button></li>
+                <li class="item" id="item9"><button class="mode"><img src="Images/dark.svg" alt=""></button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-popup">
+        <h1>Login</h1>
+        <form action="">
+        <input id="username" class="input" type="text" aria-label="username" placeholder="username">
+        <input id="password"class="input" type="text" aria-label="password" placeholder="password">
+        <input id="submit"class="submit" type="submit" aria-label="submit" placeholder="submit" >
+        </form>
+        <button class="close"><img id="close" src="Images/close.svg" alt=""></button>
+    </div>
+    <div class="signup-popup">
+        <h1>Sign Up</h1>
+        <form action="">
+        <input id="firstname" class="input" type="text" aria-label="firstname" placeholder="First Name">
+        <input id="lastname" class="input" type="text" aria-label="lastname" placeholder="Last Name">
+        <input id="susername" class="input" type="text" aria-label="username" placeholder="username">
+        <input id="spassword"class="input" type="text" aria-label="password" placeholder="password">
+        <input id="ssubmit"class="submit" type="submit" aria-label="submit" placeholder="submit" >
+        </form>
+        <button class="sclose"><img id="sclose" src="Images/close.svg" alt=""></button>
+    </div>
+   
+    <div class="searchboxpopup">
+        <img src="Images/search.svg" width="40px" height="40px" alt="">
+        <input type="text" name="" id="" placeholder="Search" aria-label="searchboxpopup">
+        <div></div>
+    </div>
+    <div class="headingswitch">
+        <h1>Welcome To Emo<br>This will help you in your <span style="color:purple" id="business-span"></span></h1>
+        <img src="Images/chatimg (Custom).png" width="800px" height="400px" alt="">
+    </div>
+    <div class="chatbotdisplay">
+        <h1>Emo-Chatbot</h1>
+        <button>Try Emo</button>
+    </div>
+    <!-- Scripts -->
+    <script src="mode.js"></script>
+    <script src="script.js"></script>
+    <script src="textswicth.js"></script>
+</body>
+</html>
